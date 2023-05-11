@@ -63,7 +63,7 @@ function newConversation() {
   }
   
   // Add a line break to the typewriter element
-  typewriter.innerHTML += "<br>";
+  typewriter.innerHTML += "<hr>";
   
   // Call the type function again
   type();
