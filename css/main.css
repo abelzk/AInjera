@@ -6,6 +6,7 @@ body {
   background-color: black;
   font-family: "Inter", sans-serif;
   letter-spacing: 0.5px;
+
 }
 .title img {
   width: 40px;
@@ -45,7 +46,27 @@ body {
   margin: 0 auto;
   text-align: center;
 }
-
+.control {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    margin-top: 5px;
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+    background-color: transparent;
+  }
+  .control input {
+    font-family: monospace;
+    padding-left: 10px;
+    color: whitesmoke;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(12, 12, 12);
+    border: solid 1px rgb(37, 37, 37);
+    border-radius: 10px;
+  }
 .head {
   text-align: left;
   font-size: 12px;
@@ -88,11 +109,12 @@ align-items: center;
 }
 .area {
     border: solid 1px rgb(37, 37, 37);
-    overflow-y: hidden;
+    overflow-y: scroll;
   padding: 15px;
   background-color: rgb(12, 12, 12);
   border-radius: 10px;
   max-width: 100%;
+  max-height: calc(100vh - 300px);
   min-width: calc(100vw - 12%);
   min-height: calc(100vh - 200px);
   
@@ -102,10 +124,9 @@ align-items: center;
     background-color: #0471a6;
     border-radius: 12px;
     padding: 15px;
-  color: whitesmoke;
-  /* font-family: "Roboto Mono", monospace; */
-  /* border-right: 0.15em solid #1e1e1e; */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: whitesmoke;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .typewriter2 {
     background-color: #0471a6;
@@ -113,31 +134,9 @@ align-items: center;
     padding: 15px;
   color: whitesmoke;
   font-family: "Roboto Mono", monospace;
-  /* border-right: 0.15em solid #1e1e1e; */
 }
 #from{
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
-}
-.control {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: flex-start;
-  margin-top: 5px;
-  width: 100%;
-  height: 80px;
-  border-radius: 10px;
-  background-color: transparent;
-}
-.control input {
-  font-family: monospace;
-  padding-left: 10px;
-  color: whitesmoke;
-  width: 100%;
-  height: 70px;
-  background-color: rgb(12, 12, 12);
-  border: solid 1px rgb(37, 37, 37);
-  border-radius: 10px;
 }

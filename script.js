@@ -10,7 +10,7 @@ var typewriter = document.getElementById("typewriter");
 var index = 0;
 
 // The speed of typing in milliseconds
-var speed = 30;
+var speed = 10;
 
 // A counter to keep track of how many conversations have been started
 var count = 0;
@@ -47,13 +47,13 @@ function newConversation() {
   // Change the text to a new one based on the counter
   switch (count) {
     case 1:
-      text =  "What are some of your hobbies?";
+      text =  "Hi there, I’m AInjera, the AI chatbot that knows everything about Ethiopian cuisine and culture. I’m happy to share my knowledge with you and answer any questions you might have. Whether you want to know how to prepare injera, the staple flatbread, or what are some of the most popular dishes and spices in Ethiopia, I’m here to help. I can also tell you about the history, geography, and traditions of this amazing country. Just type your question and I’ll try to give you a satisfying answer. Let’s have some fun! 😊";
       break;
     case 2:
-      text = "What kind of music do you like?";
+      text = "Hi there, I’m AInjera, the AI chatbot that knows everything about Ethiopian cuisine and culture. I’m happy to share my knowledge with you and answer any questions you might have. Whether you want to know how to prepare injera, the staple flatbread, or what are some of the most popular dishes and spices in Ethiopia, I’m here to help. I can also tell you about the history, geography, and traditions of this amazing country. Just type your question and I’ll try to give you a satisfying answer. Let’s have some fun! 😊";
       break;
     case 3:
-      text = "Where do you live?";
+      text = "Hi there, I’m AInjera, the AI chatbot that knows everything about Ethiopian cuisine and culture. I’m happy to share my knowledge with you and answer any questions you might have. Whether you want to know how to prepare injera, the staple flatbread, or what are some of the most popular dishes and spices in Ethiopia, I’m here to help. I can also tell you about the history, geography, and traditions of this amazing country. Just type your question and I’ll try to give you a satisfying answer. Let’s have some fun! 😊";
       // Set the flag to false so that no more questions are asked
       askMore = false;
       break;
