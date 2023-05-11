@@ -26,24 +26,20 @@ body {
   font-family: monospace;
   font-weight: 300;
   color: rgb(198, 191, 216);
-  border-right: 7px solid;
   overflow: hidden;
 }
 .container {
   padding: 5px;
   margin-top: 30px;
-  /* width: 290px;
-  height: 500px; */
   min-width: calc(100vw - 25%);
   max-width: 290px;
   height: 500px;
-  border-radius: 10px;
   align-items: center;
   justify-content: space-around;
   display: grid;
   border-radius: 15px;
-  background: rgba(128, 128, 128, 0.083);
-  box-shadow: 3px 3px 7px #271f3121, -3px -3px 7px #2b272f25;
+  border: .2px solid rgba(128, 128, 128, 0.229);
+  background: #080a09;
   margin: 0 auto;
   text-align: center;
 }
@@ -86,24 +82,38 @@ body {
   background-color: rgba(128, 128, 128, 0.111);
 }
 .chat-head {
-  width: 100%;
-  height: 50px;
-  background-color: rgba(240, 248, 255, 0.079);
+    margin-bottom: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+    align-content: center;
+
+ 
+  background-color: rgba(240, 248, 255, 0);
   margin: 0;
   padding: 0;
   border-radius: 10px 10px 0 0;
 }
 .area {
+  padding: 15px;
   background-color: rgb(12, 12, 12);
   border-radius: 10px;
-  min-width: calc(100vw - 10%);
-  min-height: calc(100vh - 150px);
-  padding: 10px;
+  max-width: 100%;
+  min-width: calc(100vw - 12%);
+  min-height: calc(100vh - 250px);
+  
 }
 .typewriter {
+    background-color: #0471a6;
+    border-radius: 12px;
+    padding: 15px;
   color: whitesmoke;
   font-family: "Roboto Mono", monospace;
-  border-right: 0.15em solid #1e1e1e;
+  /* border-right: 0.15em solid #1e1e1e; */
+}
+#from{
+    color: black;
+    font-family: "Roboto Mono", monospace;
 }
 .control {
   display: flex;
@@ -125,62 +135,4 @@ body {
   background-color: rgba(128, 128, 128, 0.185);
   border: solid 1px rgba(128, 128, 128, 0.185);
   border-radius: 10px;
-}
-@keyframes letters {
-  from {
-    left: 0;
-  }
-  to {
-    left: 50ch;
-  }
-}
-@keyframes lines {
-  from {
-    top: 0;
-  }
-  to {
-    top: 100%;
-  }
-}
-@keyframes cursor-type {
-  50% {
-    border-color: orangered;
-  }
-}
-@keyframes cursor-wait {
-  0% {
-    box-shadow: inset 2px 0 0 0 rgba(0, 0, 0, 0);
-  }
-  1% {
-    box-shadow: inset 2px 0 0 0 black;
-  }
-  40% {
-    box-shadow: inset 2px 0 0 0 black;
-  }
-}
-@supports (width: 1ch) {
-  .type:before,
-  .type:after {
-    box-sizing: border-box;
-    content: "";
-    position: absolute;
-    z-index: 1;
-    display: block;
-    height: 1.2em;
-    width: 100%;
-    background-color: rgb(12, 12, 12);
-  }
-  .type:before {
-    border-left: 2px solid transparent;
-    top: 100%;
-    animation-name: letters, lines, cursor-type, cursor-wait;
-    animation-fill-mode: both, both, both, backwards;
-  }
-  .type:after {
-    content: "";
-    height: 100%;
-    top: 100%;
-    left: 0;
-    margin-top: 1.2em;
-  }
 }

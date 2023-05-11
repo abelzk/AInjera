@@ -5,7 +5,7 @@
  var text = "Hello, I'm AInjera. 🤖 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nisi quasi laudantium incidunt saepe? Ea, ipsam fugit tempore consequuntur ducimus magnam quo inventore similique mollitia, dolorum veritatis dicta explicabo nequew!  can help you with various tasks and topics.";
 
  // Define the typing speed in milliseconds
- var speed = 20;
+ var speed = 30;
 
  // Define a variable to store the current index of the text
  var index = 0;
