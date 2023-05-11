@@ -26,7 +26,7 @@ typewriter.innerHTML = typewriter.innerHTML + char;
      // If the index is equal to the length of the text, start blinking the cursor
      blink();
    }
- }
+ } 
 
  // Define a function to blink the cursor periodically
  function blink() {

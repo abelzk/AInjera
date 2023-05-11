@@ -95,6 +95,7 @@ align-items: center;
   border-radius: 10px 10px 0 0;
 }
 .area {
+    overflow-y: scroll;
   padding: 15px;
   background-color: rgb(12, 12, 12);
   border-radius: 10px;
