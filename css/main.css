@@ -101,10 +101,18 @@ align-items: center;
   border-radius: 10px;
   max-width: 100%;
   min-width: calc(100vw - 12%);
-  min-height: calc(100vh - 250px);
+  min-height: calc(100vh - 200px);
   
 }
 .typewriter {
+    background-color: #0471a6;
+    border-radius: 12px;
+    padding: 15px;
+  color: whitesmoke;
+  font-family: "Roboto Mono", monospace;
+  /* border-right: 0.15em solid #1e1e1e; */
+}
+.typewriter2 {
     background-color: #0471a6;
     border-radius: 12px;
     padding: 15px;
