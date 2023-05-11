@@ -6,30 +6,29 @@ body {
   background-color: black;
   font-family: "Inter", sans-serif;
   letter-spacing: 0.5px;
-
 }
-hr{
-    height: 1px;
-    border: none;
-    background-color: #3e748f;
+hr {
+  height: 1px;
+  border: none;
+  background-color: #3695c537;
 }
-.price button{
-    height: 50px;
-    width: 100%;
-    border-radius: 10px;
-    color: white;
-    background-color: #0471a6;
-    border: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
+.price button {
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+  background-color: #0471a6;
+  border: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
 }
 .title img {
   width: 40px;
   margin-right: 15px;
 }
 .title {
-    margin-top: 10px;
-    margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   width: 100%;
   font-size: 12px;
   display: flex;
@@ -56,32 +55,48 @@ hr{
   justify-content: space-around;
   display: grid;
   border-radius: 15px;
-  border: .2px solid rgba(128, 128, 128, 0.229);
+  border: 0.2px solid rgba(128, 128, 128, 0.229);
   background: #080a09;
   margin: 0 auto;
   text-align: center;
 }
+
 .control {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: flex-start;
-    margin-top: 5px;
-    width: 100%;
-    height: 80px;
-    border-radius: 10px;
-    background-color: transparent;
-  }
-  .control input {
-    font-family: monospace;
-    padding-left: 10px;
-    color: whitesmoke;
-    width: 100%;
-    height: 70px;
-    background-color: rgb(12, 12, 12);
-    border: solid 1px rgb(37, 37, 37);
-    border-radius: 10px;
-  }
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  margin-top: 5px;
+  width: 100%;
+  height: 80px;
+  border-radius: 10px;
+  background-color: rgb(12, 12, 12);
+  border: solid 1px rgb(37, 37, 37);
+}
+.control input {
+  font-family: monospace;
+  padding-left: 10px;
+  color: whitesmoke;
+  width: 100%;
+  height: 70px;
+  border: none;
+  background-color: rgb(12, 12, 12);
+  border-radius: 10px;
+  
+}
+.control input:focus {
+  outline: none;
+}
+.control .submit {
+  margin-right: 10px;
+  background-color: transparent;
+  width: 55px;
+  height: 45px;
+  font-size: larger;
+  border: none;
+  border-radius: 50%;
+  color: white;
+}
 .head {
   text-align: left;
   font-size: 12px;
@@ -110,48 +125,46 @@ hr{
   background-color: rgba(128, 128, 128, 0.111);
 }
 .chat-head {
-    margin-bottom: 20px;
-display: flex;
-justify-content: center;
-align-items: center;
-    align-content: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 
- 
   background-color: rgba(240, 248, 255, 0);
   margin: 0;
   padding: 0;
   border-radius: 10px 10px 0 0;
 }
+
 .area {
-    border: solid 1px rgb(37, 37, 37);
-    overflow-y: scroll;
+  border: solid 1px rgb(37, 37, 37);
+  overflow-y: scroll;
   padding: 15px;
   background-color: rgb(12, 12, 12);
   border-radius: 10px;
-  max-width: 100%;
+
   max-height: calc(100vh - 300px);
   min-width: calc(100vw - 12%);
   min-height: calc(100vh - 200px);
-  
 }
-
-.typewriter {
-    background-color: #0471a6;
-    border-radius: 12px;
-    padding: 15px;
-     color: whitesmoke;
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.typewriter2 {
-    background-color: #0471a6;
-    border-radius: 12px;
-    padding: 15px;
+.area .response{
+  border-radius: 15px;
   color: whitesmoke;
-  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: right;
+  padding-right: 15px;
 }
-#from{
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+.typewriter {
+  background-color: #0471a6;
+  border-radius: 12px;
+  padding: 15px;
+  color: whitesmoke;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#from {
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
