@@ -9,7 +9,7 @@ var typewriter = document.getElementById("typewriter");
 var index = 0;
 
 // The speed of typing in milliseconds
-var speed = 30;
+var speed =20;
 
 // A counter to keep track of how many conversations have been started
 var count = 0;
@@ -60,6 +60,7 @@ function startConversation() {
   
   index = 0;
   // Change the text to the first conversation message
+  response.style.textTransform = "capitalize"
   text = "Hello, " + response.innerHTML +
     "  , How lovely your name is. There is a nice story I want to tell you before we start our conversation. I hope you’re eager. 😊";
   // Add a line break to the typewriter element
@@ -81,7 +82,7 @@ function type() {
   } else {
     // If the index is equal to the length of the text
     // If the chatbot should ask more questions and the counter is less than 3
-    if (askMore && count < 3) {
+    if (askMore && count < 5) {
       // Wait for 3 seconds and then start a new conversation
       setTimeout(newConversation, 3000);
     }
@@ -97,16 +98,20 @@ function newConversation() {
   // Change the text to a new one based on the counter
   switch (count) {
     case 1:
-      text = "What would you like to know about Ethiopian cuisine or culture?";
+      text = "Content Warning: This story contains themes of violence and horror. 👻";
       break;
     case 2:
-      text = "That's interesting! Do you have any other questions?";
+      text = "Jake had been dating Emily for a few months when he first noticed something strange about her. She would sometimes stare off into space, her eyes glazed over, and not respond to anything he said. At first, he thought it was just a quirk, but as time went on, the episodes became more frequent and intense.";
       break;
     case 3:
-      text = "Thank you for talking to me! Have a great day!";
+      text = "During their last encounter, Jake addressed Emily using that secrete name, Emily's eyes widened, and she started convulsing. Jake tried to calm her down, but she lashed out at him with incredible strength, throwing him across the room. Consequently, Jake vowed to refrain from using that particular name when speaking to her.";
       // Set the flag to false so that no more questions are asked
-      askMore = false;
+      // askMore = false;
       break;
+      case 4:
+        text = "Despite Jake's avoidance of the secret name, Emily began to provoke him and challenge him to use it. Over time, Jake realized that Emily was testing his patience and even hiding his letters. In response, he hatched a plan to send her a message using a talking goat, deliberately using the forbidden word consisting of six evilish-devilish letters to provoke her and see how she would react.";
+        askMore = false;
+        break;
     default:
       text = "";
       break;
