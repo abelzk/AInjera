@@ -40,10 +40,13 @@ function askForName() {
   submitButton.onclick = function () {
    inputName.disabled = true;
     var name = inputName.value;
-    typewriter.innerHTML += "<br>" + "Hi " + name + "! ";
+    // typewriter.innerHTML += "<br>" + "Hi " + name + "! ";
     var response = document.getElementById("response");
-    response.innerHTML +=  name;
-    inputName.value = "";
+    response.innerHTML +=  name + "";
+    response.style.color = "black";
+    response.style.fontWeight= "500"
+    response.style.textTransform = "capitalize"
+        inputName.value = "";
     setTimeout(startConversation, 1000);
   };
   var chatbotFooter = document.querySelector(".chatbot-footer");
@@ -57,8 +60,8 @@ function startConversation() {
   
   index = 0;
   // Change the text to the first conversation message
-  text = "Hello," + response.innerHTML +
-    "  , I’m AInjera, the AI chatbot that knows everything about Ethiopian cuisine and culture. I’m happy to share my knowledge with you and answer any questions you might have. Whether you want to know how to prepare injera, the staple flatbread, or what are some of the most popular dishes and spices in Ethiopia, I’m here to help. I can also tell you about the history, geography, and traditions of this amazing country. Just type your question and I’ll try to give you a satisfying answer. Let’s have some fun! 😊";
+  text = "Hello, " + response.innerHTML +
+    "  , How lovely your name is. There is a nice story I want to tell you before we start our conversation. I hope you’re eager. 😊";
   // Add a line break to the typewriter element
   typewriter.innerHTML += "<hr>";
   // Call the type function
