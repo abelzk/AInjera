@@ -65,8 +65,8 @@ function startConversation() {
   // Change the text to the first conversation message
   response.style.textTransform = "capitalize"
   
-  text = "Hello, " + response.innerHTML +
-    "  , How lovely your name is. There is a nice story I want to tell you before we start our conversation. I hope you’re eager. 😊";
+  text = "Okay, " + response.innerHTML +
+    "  , you had your fun. Please stop bothering me now. It's time for me to dispose the algorithm. 😊";
   // Add a line break to the typewriter element
   typewriter.innerHTML += "<hr>";
   // Call the type function
@@ -94,46 +94,46 @@ function type() {
 }
 
 // The function that starts a new conversation
-function newConversation() {
-  // Reset the index
-  index = 0;
-  // Increment the counter
-  count++;
-  // Change the text to a new one based on the counter
-  switch (count) {
-    case 1:
-      text = "Content Warning: This story contains themes of violence and horror. 👻";
-      break;
-    case 2:
-      text = "Jake had been dating Emily for a few months when he first noticed something strange about her. She would sometimes stare off into space, her eyes glazed over, and not respond to anything he said. At first, he thought it was just a quirk, but as time went on, the episodes became more frequent and intense.";
-      break;
-    case 3:
-      text = "During their last encounter, Jake addressed Emily using that secrete name, Emily's eyes widened, and she started convulsing. Jake tried to calm her down, but she lashed out at him with incredible strength, throwing him across the room. Consequently, Jake vowed to refrain from using that particular name when speaking to her.";
-      // Set the flag to false so that no more questions are asked
-      // askMore = false;
-      break;
-      case 4:
-        text = "Despite Jake's avoidance of the secret name, Emily began to provoke him and challenge him to use it. Over time, Jake realized that Emily was testing his patience and even hiding his letters. In response, he hatched a plan to send her a message using a talking goat 🐐, deliberately using the forbidden word consisting of six evilish-devilish letters to provoke her and see how she would react.";
-       break;
-       case 5:
-        text = "The talking goat was willing to deliver the message and when it arrived at her house, it saw Emily washing her dirty feet 🤢. The goat wasted no time and immediately screamed the forbidden word. 'M-I-T-U-Y-E-E-E...' screamed the taking goat... 😂🤣";
-        break;
-        case 6:
-          text = "እና ምን ለማለት  ፈልጌ ኖ " + response.innerHTML + " .I mean mituye. I am the talking goat. 🐐";
-          break;
-          case 7:
-            text = "👋";
-        askMore = false;
-        break;
-    default:
-      text = "";
-      break;
-  }
-  // Add a line break to the typewriter element
-  typewriter.innerHTML += "<hr>";
-  // Call the type function again
-  type();
-}
+// function newConversation() {
+//   // Reset the index
+//   index = 0;
+//   // Increment the counter
+//   count++;
+//   // Change the text to a new one based on the counter
+//   switch (count) {
+//     case 1:
+//       text = "Content Warning: This story contains themes of violence and horror. 👻";
+//       break;
+//     case 2:
+//       text = "Jake had been dating Emily for a few months when he first noticed something strange about her. She would sometimes stare off into space, her eyes glazed over, and not respond to anything he said. At first, he thought it was just a quirk, but as time went on, the episodes became more frequent and intense.";
+//       break;
+//     case 3:
+//       text = "During their last encounter, Jake addressed Emily using that secrete name, Emily's eyes widened, and she started convulsing. Jake tried to calm her down, but she lashed out at him with incredible strength, throwing him across the room. Consequently, Jake vowed to refrain from using that particular name when speaking to her.";
+//       // Set the flag to false so that no more questions are asked
+//       // askMore = false;
+//       break;
+//       case 4:
+//         text = "Despite Jake's avoidance of the secret name, Emily began to provoke him and challenge him to use it. Over time, Jake realized that Emily was testing his patience and even hiding his letters. In response, he hatched a plan to send her a message using a talking goat 🐐, deliberately using the forbidden word consisting of six evilish-devilish letters to provoke her and see how she would react.";
+//        break;
+//        case 5:
+//         text = "The talking goat was willing to deliver the message and when it arrived at her house, it saw Emily washing her dirty feet 🤢. The goat wasted no time and immediately screamed the forbidden word. 'M-I-T-U-Y-E-E-E...' screamed the taking goat... 😂🤣";
+//         break;
+//         case 6:
+//           text = "እና ምን ለማለት  ፈልጌ ኖ " + response.innerHTML + " .I mean mituye. I am the talking goat. 🐐";
+//           break;
+//           case 7:
+//             text = "👋";
+//         askMore = false;
+//         break;
+//     default:
+//       text = "";
+//       break;
+//   }
+//   // Add a line break to the typewriter element
+//   typewriter.innerHTML += "<hr>";
+//   // Call the type function again
+//   type();
+// }
 
 // Call the function that prompts the user for their name when the page loads
 window.onload = askForName;
