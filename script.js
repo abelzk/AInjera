@@ -9,7 +9,7 @@ var typewriter = document.getElementById("typewriter");
 var index = 0;
 
 // The speed of typing in milliseconds
-var speed =70;
+var speed =60;
 
 // A counter to keep track of how many conversations have been started
 var count = 0;
@@ -49,10 +49,10 @@ function askForName() {
         inputName.value = "";
     setTimeout(startConversation, 1000);
   };
-  var chatbotFooter = document.querySelector(".chatbot-footer");
-  chatbotFooter.innerHTML = "";
-  chatbotFooter.appendChild(inputName);
-  chatbotFooter.appendChild(submitButton);
+  // var chatbotFooter = document.querySelector(".chatbot-footer");
+  // chatbotFooter.innerHTML = "";
+  // chatbotFooter.appendChild(inputName);
+  // chatbotFooter.appendChild(submitButton);
 }
 // The function that starts responding after getting the user's name
 function startConversation() {
@@ -115,7 +115,8 @@ function newConversation() {
         text = "The talking goat was willing to deliver the message and when it arrived at her house, it saw Emily washing her dirty feet 🤢. The goat wasted no time and immediately screamed the forbidden word. 'M-I-T-U-Y-E-E-E...' screamed the taking goat... 😂🤣";
         break;
         case 6:
-          text = "እና ምን ለማለት  ፈልጌ ኖ " + response.innerHTML + " .I mean MITUYE. I am the talking goat. 🐐";
+          text = "እና ምን ለማለት  ፈልጌ ኖ " + response.innerHTML + " .I mean mituye. I am the talking goat. 🐐";
+          break;
           case 7:
             text = "👋";
         askMore = false;
