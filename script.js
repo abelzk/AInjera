@@ -41,6 +41,7 @@ function askForName() {
   submitButton.onclick = function () {
     inputName.setAttribute("placeholder", "🤖 Read my story...");
    inputName.disabled = true;
+   submitButton.disabled = true;
     var name = inputName.value;
     // typewriter.innerHTML += "<br>" + "Hi " + name + "! ";
     var response = document.getElementById("response");
