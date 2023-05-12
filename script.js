@@ -42,7 +42,7 @@ function askForName() {
     var name = inputName.value;
     // typewriter.innerHTML += "<br>" + "Hi " + name + "! ";
     var response = document.getElementById("response");
-    response.innerHTML +=  name + "";
+    response.innerHTML =  name + "";
     response.style.color = "black";
     response.style.fontWeight= "500"
     response.style.textTransform = "capitalize"
