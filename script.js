@@ -32,12 +32,14 @@ function askForName() {
       event.preventDefault();
       // Trigger the button element with a click
       document.querySelector("button").click();
+      inputName.setAttribute("placeholder", "🤖 Read my story...");
     }
   });
   var submitButton = document.getElementById("submit-name");
   submitButton.setAttribute("type", "button");
   submitButton.setAttribute("id", "submit-button");
   submitButton.onclick = function () {
+    inputName.setAttribute("placeholder", "🤖 Read my story...");
    inputName.disabled = true;
     var name = inputName.value;
     // typewriter.innerHTML += "<br>" + "Hi " + name + "! ";
@@ -57,10 +59,11 @@ function askForName() {
 // The function that starts responding after getting the user's name
 function startConversation() {
   // Reset the index
-  
+
   index = 0;
   // Change the text to the first conversation message
   response.style.textTransform = "capitalize"
+  
   text = "Hello, " + response.innerHTML +
     "  , How lovely your name is. There is a nice story I want to tell you before we start our conversation. I hope you’re eager. 😊";
   // Add a line break to the typewriter element
